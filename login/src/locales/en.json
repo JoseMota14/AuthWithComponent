@@ -1,0 +1,14 @@
+{
+  "translations": {
+    "specificKey": "vaa"
+  },
+  "login": {
+    "login": "Login",
+    "changePassword": "Change password",
+    "signup": "Signup",
+    "recover": "Forgot the password?",
+    "createPassword": "Create your password",
+    "confirmPassword": "Confirm password",
+    "username": "Username"
+  }
+}

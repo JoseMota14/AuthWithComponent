@@ -1,0 +1,14 @@
+{
+  "translations": {
+    "specificKey": "valor transformado"
+  },
+  "login": {
+    "login": "Iniciar sessão",
+    "changePassword": "Mudar palavra-passe",
+    "signup": "Criar conta",
+    "recover": "Esqueceu-se da palavra-passe?",
+    "createPassword": "Crie a sua password",
+    "confirmPassword": "Confirme a palavra-passe",
+    "username": "Utilizador"
+  }
+}
