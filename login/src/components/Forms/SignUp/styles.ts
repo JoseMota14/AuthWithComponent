@@ -1,14 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 400px;
   max-height: 800px;
   border-radius: 6px 0 0 6px;
 `;
 
 export const FormComponent = styled.form`
-  width: 100%;
+  width: 500px;
   height: 100%;
   max-height: 800px;
   background-color: ${({ theme }) => theme.colors.shape};
@@ -56,7 +56,7 @@ export const FormComponent = styled.form`
     color: ${({ theme }) => theme.colors.grey2};
   }
 
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     width: 0.9rem;
     height: 0.9rem;
     margin-right: 0.8rem;
@@ -138,7 +138,7 @@ export const ButtonSubmit = styled.button`
   }
 
   &:after {
-    content: '';
+    content: "";
     background-color: ${({ theme }) => theme.colors.primaryRGBA};
     display: block;
     position: absolute;

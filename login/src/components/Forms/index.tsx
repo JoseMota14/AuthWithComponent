@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LanguageSwitcher from "../Language";
 import { Container } from "../styles";
 import { LoginForm } from "./Login";
 import { CreateForm } from "./SignUp";
@@ -10,6 +11,7 @@ export default function Form() {
 
   return (
     <Container>
+      <LanguageSwitcher />
       {form === "LOGIN" ? (
         <LoginForm handleChangeForm={setForm} />
       ) : form === "SIGNUP" ? (

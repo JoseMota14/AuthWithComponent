@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Container } from "./styles";
+
 export default function LanguageSwitcher() {
   const {
     i18n: { changeLanguage, language },
@@ -13,9 +15,9 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div>
+    <Container>
       <button onClick={handleChangeLanguage}>English</button>
       <button onClick={handleChangeLanguage}>Portuguese</button>
-    </div>
+    </Container>
   );
 }

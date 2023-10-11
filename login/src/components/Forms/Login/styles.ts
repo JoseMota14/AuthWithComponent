@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 400px;
   max-height: 800px;
   border-radius: 6px 0 0 6px;
 `;
 
 export const FormComponent = styled.form`
-  width: 100%;
+  width: 500px;
   height: 100%;
   max-height: 800px;
   background-color: ${({ theme }) => theme.colors.shape};
