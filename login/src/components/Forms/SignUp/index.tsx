@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import { state } from "..";
 import useAuth from "../../../hooks/useAuth";
 import Loading from "../../Loading";
-import { Button, ButtonSubmit, Container, FormComponent } from "./styles";
+import { FormComponent } from "./styles";
 
 export interface iLoginData {
   username: string;
@@ -52,7 +52,7 @@ export function CreateForm({ handleChangeForm }: Props) {
   }
 
   return (
-    <Container>
+    <div>
       <FormComponent onSubmit={handleSubmit(onSubmitFuntion)}>
         <h2>{t("login:signup")}</h2>
 
@@ -89,14 +89,14 @@ export function CreateForm({ handleChangeForm }: Props) {
           <div></div>
         )}
 
-        <ButtonSubmit disabled={loading} type="submit">
+        <button disabled={loading} type="submit">
           {loading ? <Loading /> : `Criar conta`}
-        </ButtonSubmit>
+        </button>
 
-        <Button type="button" onClick={changeForm1}>
+        <button type="button" onClick={changeForm1}>
           <span>{t("login:login")}</span>
-        </Button>
+        </button>
       </FormComponent>
-    </Container>
+    </div>
   );
 }

@@ -5,14 +5,7 @@ import * as Yup from "yup";
 import { state } from "..";
 import useAuth from "../../../hooks/useAuth";
 import Loading from "../../Loading";
-import {
-  Button,
-  ButtonForget,
-  ButtonSubmit,
-  Container,
-  Flex,
-  FormComponent,
-} from "./styles";
+import { Flex, FormComponent } from "./styles";
 
 export interface iFormProps {
   handleChangeForm: React.Dispatch<React.SetStateAction<state>>;
@@ -57,7 +50,7 @@ export function LoginForm({ handleChangeForm }: iFormProps) {
   }
 
   return (
-    <Container>
+    <div>
       <FormComponent onSubmit={handleSubmit(onSubmitFuntion)}>
         <h2>{t("login:login")}</h2>
         <input type="text" placeholder="Utilizador" {...register("username")} />
@@ -76,21 +69,21 @@ export function LoginForm({ handleChangeForm }: iFormProps) {
         ) : (
           <div></div>
         )}
-        <ButtonForget type="button" onClick={handleRecoverAccount}>
+        <button type="button" onClick={handleRecoverAccount}>
           {t("login:recover")}
-        </ButtonForget>
-        <ButtonSubmit disabled={loading} type="submit">
+        </button>
+        <button disabled={loading} type="submit">
           {loading ? <Loading /> : `Iniciar sessão`}
-        </ButtonSubmit>
+        </button>
         <Flex>
-          <Button type="button" onClick={handleCreateAccount}>
+          <button type="button" onClick={handleCreateAccount}>
             <span>{t("login:signup")}</span>
-          </Button>
-          <Button type="button" onClick={handleChangePassword}>
+          </button>
+          <button type="button" onClick={handleChangePassword}>
             <span>{t("login:changePassword")}</span>
-          </Button>
+          </button>
         </Flex>
       </FormComponent>
-    </Container>
+    </div>
   );
 }

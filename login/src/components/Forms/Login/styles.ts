@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  width: 100%;
-  height: 400px;
-  max-height: 800px;
-  border-radius: 6px 0 0 6px;
-`;
-
 export const FormComponent = styled.form`
   width: 500px;
   height: 100%;
@@ -118,100 +111,6 @@ export const FormComponent = styled.form`
       color: ${({ theme }) => theme.colors.grey2};
     }
   }
-`;
-
-export const ButtonSubmit = styled.button`
-  width: 100%;
-  height: 2.3rem;
-  background-color: ${({ theme }) => theme.colors.primary};
-  margin-top: 2rem;
-  padding: 0.7rem;
-  border: none;
-  border-radius: 6px;
-  outline: none;
-  cursor: pointer;
-  font-size: ${({ theme }) => theme.fonts.fSize4}rem;
-  font-weight: ${({ theme }) => theme.fonts.regular};
-  color: ${({ theme }) => theme.colors.grey1};
-  position: relative;
-  -webkit-transition-duration: 0.6s; /* Safari */
-  transition-duration: 0.6s;
-  text-decoration: none;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.buttonBack};
-  }
-
-  &:after {
-    content: "";
-    background-color: ${({ theme }) => theme.colors.primaryRGBA};
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s;
-  }
-
-  &:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s;
-  }
-
-  @media (max-height: 600px) {
-    margin-top: 1rem;
-    font-size: ${({ theme }) => theme.fonts.fSize4}rem;
-    font-weight: ${({ theme }) => theme.fonts.semiBold};
-    color: ${({ theme }) => theme.colors.grey1};
-  }
-`;
-
-export const Button = styled.button`
-  width: 100%;
-  background: none;
-  margin: 0 auto;
-  margin-top: 1rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: ${({ theme }) => theme.fonts.fSize5}rem;
-  font-weight: ${({ theme }) => theme.fonts.regular};
-  color: ${({ theme }) => theme.colors.grey2};
-
-  span {
-    display: inline;
-    font-size: ${({ theme }) => theme.fonts.fSize5}rem;
-    font-weight: ${({ theme }) => theme.fonts.semiBold};
-    color: ${({ theme }) => theme.colors.grey4};
-  }
-`;
-
-export const ButtonForget = styled.button`
-  width: 100%;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  text-align: left;
-  font-size: ${({ theme }) => theme.fonts.fSize6}rem;
-  font-weight: ${({ theme }) => theme.fonts.semiBold};
-  color: ${({ theme }) => theme.colors.primary};
-`;
-
-export const Wrapper = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
 `;
 
 export const Flex = styled.div`
